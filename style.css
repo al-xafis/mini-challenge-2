@@ -1,0 +1,157 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.4;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color:  hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content {
+    width: 70rem;
+    height: 25rem;
+    display: flex;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+
+.content__figure {
+    width: 40%;
+    height: 25rem;
+    
+}
+
+.content__image {
+    background-image: url("images/drawers.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.content__description {
+    width: 60%;
+    height: 25rem;
+    background-color: #fff;
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.content__header h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.content__text{
+    font-size: 1.3rem;
+    font: 500;
+    color: hsl(214, 17%, 51%);
+    padding-top: .8rem;
+}
+
+.content__info {
+    display: flex;
+    align-items: flex-center;
+    padding-top: 1.3rem;
+    position: relative;
+}
+
+.content__info-img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+}
+
+.content__info-intro{
+    margin-left: 1.5rem;
+}
+
+.content__info-name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+
+.content__info-date{
+    padding-top: .5rem;
+    color: hsl(212, 23%, 69%);
+}
+
+.content__info-forward{
+    margin-left: auto;
+    margin-right: 1rem;
+    align-self: center;
+}
+
+.savage{
+    position: relative;
+    z-index: 999;
+}
+
+.circle{
+    position: absolute;
+    width: 3.5rem;
+    height: 3.5rem;
+    top: 14px; right: 1.5px;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+    z-index: 999;
+}
+
+@media (max-width: 600px){
+    /* .container{
+        flex-direction: column;
+    } */
+
+    .content {
+        width: 60%;
+        height: 60rem;
+        flex-direction: column;
+    }
+
+    .content__figure{
+        margin: auto;
+        margin-top: 10rem;
+        width: 100%;
+        height: 25rem;
+    }
+
+    .content__image{
+        width: 100%;
+        height: 25rem;
+    }
+
+    .content__description{
+        margin: auto;
+        width: 100%;
+        height: 35rem;
+
+    }
+}
